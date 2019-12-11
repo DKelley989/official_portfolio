@@ -26,24 +26,116 @@ a.navbar-brand {
 .jumbotron {
   background-image: url("../images/MountainSunsetAtNight.jpg");
   background-size: cover;
-
   height: 100vh;
   color: white;
-
+  padding: 0%;
+  margin: 0%;
 }
 
 .cover-image {
   width: 100%;
 }
 
+.display-4 {
+  margin: 0%;
+  text-align: center;
+  padding-top: 20%;
+  letter-spacing: 5px;
+  font-size: 6rem;
+  font-family: nimbus-sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
 
+body,
+html {
+  height: 100%;
+  background-color: black;
+}
 
+.home-header {
+  text-align: center;
+}
+
+.home-description {
+  text-align: center;
+}
+
+.home-content {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 3% 0%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../images/Space_Background-12.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-2 {
+  /* The image used */
+  background-image: url('../images/Space_Background-14.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-3 {
+  /* The image used */
+  background-image: url('../images/Space_Background-16.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-4 {
+  /* The image used */
+  background-image: url('../images/Space_Background-19.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 
 
 /* // Extra small devices (portrait phones, less than 576px) */
 /* // No media query since this is the default in Bootstrap */
+
+@media (max-width: 768px) {
+  .display-4 {
+    padding-top: 25%;
+    font-size: 4.5rem;
+  }
+}
+
 /* Small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) {
   a.navbar-brand {
@@ -52,6 +144,11 @@ a.navbar-brand {
 
   .navbar-toggler {
     display: block;
+  }
+
+  .display-4 {
+    padding-top: 35%;
+    font-size: 2.5rem;
   }
 }
 
@@ -65,6 +162,8 @@ a.navbar-brand {
     margin: 0% 5%;
   }
 }
+
+
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {}
