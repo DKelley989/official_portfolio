@@ -46,12 +46,22 @@
 
   <section>
 
-    <div class="home-content" style="height:100%;background-color:black;font-size:150%;color:white">
-      <h2 class="home-header">Personal Profile</h2>
-      <p class="home-description">Hardworking, methodical first year Coding student who is able to push through problems
+    <div class="home-content">
+      <h2 class="home-header" style="">Personal Profile</h2>
+      <p class="home-description" style="text-indent: 6%;">Hardworking, methodical second year Coding student who is
+        able to push through
+        problems
         to find a solution and
         able
-        to talk and get along with various different people. Seeking the position of Web Developer.</p>
+        to talk and get along with various different people. Seeking the position of Web Developer.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sint doloribus dolore optio, eum quae, quibusdam
+        ratione accusamus est magnam voluptas facere porro sit, nostrum officia veniam expedita sequi recusandae!lorem
+        lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eaque debitis adipisci dolor
+        necessitatibus eveniet obcaecati, porro inventore hic ea expedita sapiente suscipit architecto quidem enim
+        voluptatibus velit ipsa tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia suscipit
+        porro minus cumque quod consectetur, fuga maiores ex, exercitationem ut culpa. Soluta nemo sint minus non ipsum
+        qui delectus dolores?
+      </p>
     </div>
 
     <div class="parallax-2" style="color: transparent">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -73,7 +83,7 @@
       elit. Ipsa, quasi. Sapiente quas rem corporis iusto, animi veritatis culpa velit officiis, est doloremque
       obcaecati eum! Velit repudiandae ipsam cum praesentium unde.</div>
 
-    <div class="home-content" style="height:100%;background-color:black;font-size:150%;color:white">
+    <div class="home-content" style="height:100%;">
       <h2 class="home-header">Knowledge, Skills, and Abilities</h2>
 
       <p class="home-description">
@@ -110,7 +120,7 @@
       obcaecati eum! Velit repudiandae ipsam cum praesentium unde.</div>
 
 
-    <div class="home-content" style="height:100%;background-color:black;font-size:150%;color:white">
+    <div class="home-content" style="height:100%;">
       <h2 class="home-header">Education</h2>
 
       <p class="home-description">
@@ -144,7 +154,7 @@
       obcaecati eum! Velit repudiandae ipsam cum praesentium unde.</div>
 
 
-    <div class="home-content" style="height:100%;background-color:black;font-size:150%;color:white;">
+    <div class="home-content">
       <h2 class="home-header">Employment/Volunteer Activities</h2>
 
       <p class="home-description">
@@ -156,8 +166,31 @@
     </div>
   </section>
 
+  <!-- Script to make header disappear while scrolling down. -->
+  <script>
+    window.addEventListener("scroll", function () {
+      var target = document.getElementsByTagName('h1');
+      if (window.pageYOffset > 140) {
+        target[0].style.color = "transparent";
+        target[0].style.transition = ".2s";
+      } else if (window.pageYOffset < 150) {
+        target[0].style.color = "white";
+        target[0].style.transition = ".2s";
+      }
+    }, false);
+  </script>
 
-  <script type="text/javascript" src="../public/javascripts/StaticScript.js"></script>
+  <script type="text/javascript">
+    fetch("https://pokeapi.co/api/v2/pokemon/ditto/", {
+        "method": "GET",
+      })
+      .then(response => {
+        console.log(response);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  </script>
 
   <!-- Bootstrap/JQuery Scripts -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

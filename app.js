@@ -1,5 +1,5 @@
 // Start using 'nodemon app.js'
-
+var fetch = require('node-fetch');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -27,7 +27,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.listen(port, () => console.log(`Official Portfolio listening on port ${port}!`))
+app.listen(port, () => {
+  console.log(`Official Portfolio listening on port ${port}!`)
+})
 
 
 // catch 404 and forward to error handler
