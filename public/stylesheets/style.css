@@ -1,3 +1,10 @@
+body,
+html {
+  height: 100%;
+  background-color: black;
+}
+
+
 .navbar {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
@@ -48,12 +55,6 @@ a.navbar-brand {
   font-weight: 700;
 }
 
-body,
-html {
-  height: 100%;
-  background-color: black;
-}
-
 .home-header {
   text-align: center;
 }
@@ -70,6 +71,33 @@ html {
   background-color: rgb(41, 41, 41);
   font-size: 150%;
   color: white
+}
+
+hr {
+  background-color: white;
+  width: 80%;
+}
+
+.page-footer {
+  background-image: url('../images/Space_Background-19.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.footer-copyright.text-center.py-3 {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+div.contentPoke div {
+  text-align: center;
+  margin: auto;
 }
 
 .parallax {
@@ -116,7 +144,21 @@ html {
 
 .parallax-4 {
   /* The image used */
-  background-image: url('../images/Space_Background-19.jpg');
+  background-image: url('../images/Space_Background-2.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-5 {
+  /* The image used */
+  background-image: url('../images/Space_Background-5.jpg');
 
   /* Full height */
   height: 100%;

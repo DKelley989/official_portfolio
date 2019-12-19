@@ -4,18 +4,29 @@
 <head>
   <title><%= title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
 <body>
   <nav class="navbar navbar-light fixed-top">
-    <a class="navbar-brand" href="#">Home</a>
+    <a class="navbar-brand" href="/views/index.ejs">Home</a>
     <a class="navbar-brand" href="#">About Me</a>
     <a class="navbar-brand" href="#">Education</a>
-    <a class="navbar-brand" href="#">Projects</a>
+    <a class="navbar-brand" href="/views/projects.ejs">Projects</a>
     <button class="navbar-toggler navbar-dark " type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,7 +34,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="/views/index.ejs">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Me</a>
@@ -32,7 +43,7 @@
           <a class="nav-link" href="#">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">Projects</a>
+          <a class="nav-link " href="/views/projects.ejs">Projects</a>
         </li>
       </ul>
     </div>
@@ -48,19 +59,55 @@
 
     <div class="home-content">
       <h2 class="home-header" style="">Personal Profile</h2>
+
+      <hr>
+
       <p class="home-description" style="text-indent: 6%;">Hardworking, methodical second year Coding student who is
         able to push through
         problems
         to find a solution and
         able
         to talk and get along with various different people. Seeking the position of Web Developer.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sint doloribus dolore optio, eum quae, quibusdam
-        ratione accusamus est magnam voluptas facere porro sit, nostrum officia veniam expedita sequi recusandae!lorem
-        lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eaque debitis adipisci dolor
-        necessitatibus eveniet obcaecati, porro inventore hic ea expedita sapiente suscipit architecto quidem enim
-        voluptatibus velit ipsa tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia suscipit
-        porro minus cumque quod consectetur, fuga maiores ex, exercitationem ut culpa. Soluta nemo sint minus non ipsum
-        qui delectus dolores?
+      </p>
+    </div>
+
+    <div class="parallax" style="color: transparent">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Consequuntur molestias ducimus et voluptate dignissimos aliquam assumenda, sint dolores animi iure modi
+      voluptatibus eius laudantium velit nobis distinctio nemo ad dolor? Lorem ipsum, dolor sit amet consectetur
+      adipisicing elit. Officiis eveniet cumque nam aspernatur incidunt nulla suscipit voluptatem magni architecto,
+      asperiores maxime ipsum. Temporibus, minus. Molestias recusandae saepe officia veritatis praesentium? Lorem ipsum
+      dolor, sit amet consectetur adipisicing elit. Quaerat officia, architecto voluptatum id ratione cum ipsam, nam
+      vero, nulla obcaecati totam tenetur eius? Corporis ad rem mollitia exercitationem perspiciatis praesentium. Lorem
+      ipsum dolor, sit amet consectetur adipisicing elit. Dicta, numquam voluptatem cumque minus asperiores tempora
+      quibusdam rem exercitationem recusandae aperiam necessitatibus veritatis hic fugiat nostrum nam, atque eligendi?
+      Necessitatibus, voluptates. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam soluta explicabo
+      aspernatur illum dolorum molestiae itaque tenetur, eum aliquam ducimus repellendus incidunt molestias ea dolorem
+      minima, omnis veritatis amet pariatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+      provident corrupti quos ea nobis accusamus ipsum aspernatur fuga nisi tenetur atque, debitis soluta eum dolor
+      eligendi id aperiam exercitationem! Delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Perspiciatis voluptate soluta non esse debitis quasi deleniti, totam dolores vitae aut, iusto numquam dolor,
+      aliquam error distinctio cupiditate quae! Quod, temporibus. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Ipsa, quasi. Sapiente quas rem corporis iusto, animi veritatis culpa velit officiis, est doloremque
+      obcaecati eum! Velit repudiandae ipsam cum praesentium unde.Lorem ipsum dolor sit amet consectetur adipisicing
+      elit.
+    </div>
+
+    <div class="home-content" style="height:100%;">
+      <h2 class="home-header">Knowledge, Skills, and Abilities</h2>
+
+      <hr>
+
+      <p class="home-description">
+        Complex Problem Solving — Identify complex problems and review related information to develop and evaluate
+        options
+        and implement solutions. <br>
+        Critical Thinking — Use logic and reasoning to identify the strengths and weaknesses of alternative solutions,
+        conclusions or approaches to problems. <br>
+        Active Listening — Give full attention to what other people are saying, take time to understand the points being
+        made, ask questions as appropriate, and not interrupting at inappropriate times. <br>
+        Judgment and Decision Making — Consider the relative costs and benefits of potential actions to choose the most
+        appropriate one. <br>
+        Reading Comprehension — Understand written sentences and paragraphs in work related documents.
       </p>
     </div>
 
@@ -81,22 +128,24 @@
       Perspiciatis voluptate soluta non esse debitis quasi deleniti, totam dolores vitae aut, iusto numquam dolor,
       aliquam error distinctio cupiditate quae! Quod, temporibus. Lorem ipsum dolor sit amet consectetur adipisicing
       elit. Ipsa, quasi. Sapiente quas rem corporis iusto, animi veritatis culpa velit officiis, est doloremque
-      obcaecati eum! Velit repudiandae ipsam cum praesentium unde.</div>
+      obcaecati eum! Velit repudiandae ipsam cum praesentium unde.Lorem ipsum dolor sit amet consectetur adipisicing
+      elit.
+    </div>
+
 
     <div class="home-content" style="height:100%;">
-      <h2 class="home-header">Knowledge, Skills, and Abilities</h2>
+      <h2 class="home-header">Education</h2>
+
+      <hr>
 
       <p class="home-description">
-        Complex Problem Solving — Identify complex problems and review related information to develop and evaluate
-        options
-        and implement solutions. <br>
-        Critical Thinking — Use logic and reasoning to identify the strengths and weaknesses of alternative solutions,
-        conclusions or approaches to problems. <br>
-        Active Listening — Give full attention to what other people are saying, take time to understand the points being
-        made, ask questions as appropriate, and not interrupting at inappropriate times. <br>
-        Judgment and Decision Making — Consider the relative costs and benefits of potential actions to choose the most
-        appropriate one. <br>
-        Reading Comprehension — Understand written sentences and paragraphs in work related documents.
+        Centennial High School, Peoria, AZ <br>
+        Expected Grad Date: May 2020 <br>
+        West-MEC Coding Program <br>
+        GPA: 3.2 <br>
+        Relevant Coursework: Computer Programming and Tech,
+        <br> Game Design and Development,
+        <br> AP Computer Science A.
       </p>
     </div>
 
@@ -117,20 +166,32 @@
       Perspiciatis voluptate soluta non esse debitis quasi deleniti, totam dolores vitae aut, iusto numquam dolor,
       aliquam error distinctio cupiditate quae! Quod, temporibus. Lorem ipsum dolor sit amet consectetur adipisicing
       elit. Ipsa, quasi. Sapiente quas rem corporis iusto, animi veritatis culpa velit officiis, est doloremque
-      obcaecati eum! Velit repudiandae ipsam cum praesentium unde.</div>
+      obcaecati eum! Velit repudiandae ipsam cum praesentium unde.Lorem ipsum dolor sit amet consectetur adipisicing
+      elit.
+    </div>
 
 
-    <div class="home-content" style="height:100%;">
-      <h2 class="home-header">Education</h2>
+    <div class="home-content">
+      <h2 class="home-header">Employment</h2>
+
+      <hr>
 
       <p class="home-description">
-        Centennial High School, Peoria, AZ <br>
-        Expected Grad Date: May 2020 <br>
-        West-MEC Coding Program <br>
-        GPA: 4 <br>
-        Relevant Coursework: Computer Programming and Tech,
-        <br> Game Design and Development,
-        <br> AP Computer Science A.
+        Uncle Sam's, Peoria, AZ <br>
+        7/2018 - 11/2018 <br>
+        Busser <br>
+        Responsibilities include: Clean tables, wash dishes, put away clean dishes/glasses, fill ice coolers.
+      </p>
+
+      <br>
+      <hr style="width: 60%">
+      <br>
+
+      <p class="home-description">
+        Angry Crab Shack, Peoria, AZ <br>
+        1/2019 - current <br>
+        HBR <br>
+        Responsibilities include: Clean tables, seat guests, fill ice, take out trash.
       </p>
     </div>
 
@@ -151,19 +212,116 @@
       Perspiciatis voluptate soluta non esse debitis quasi deleniti, totam dolores vitae aut, iusto numquam dolor,
       aliquam error distinctio cupiditate quae! Quod, temporibus. Lorem ipsum dolor sit amet consectetur adipisicing
       elit. Ipsa, quasi. Sapiente quas rem corporis iusto, animi veritatis culpa velit officiis, est doloremque
-      obcaecati eum! Velit repudiandae ipsam cum praesentium unde.</div>
-
+      obcaecati eum! Velit repudiandae ipsam cum praesentium unde.Lorem ipsum dolor sit amet consectetur adipisicing
+      elit.
+    </div>
 
     <div class="home-content">
-      <h2 class="home-header">Employment/Volunteer Activities</h2>
+      <h2 class="home-header">Volunteer Activities</h2>
+
+      <hr>
 
       <p class="home-description">
-        Uncle Sam's, Peoria, AZ <br>
-        7/2018 - 11/2018 <br>
-        Busser <br>
-        Responsibilities include: Clean tables, wash dishes, put away clean dishes/glasses, fill ice coolers.
+        <h3 class="home-header">Fallen Feathers</h3>
+
+        <p class="home-description">To get my volunteer hours done at West-MEC, I volunteered at a bird rescue place
+          called Fallen Feathers,
+          where they have hundreds of birds that they take care of everyday. People are able to bring their birds
+          there if they are injured of if something is wrong with them. Fallen Feathers is an open volunteer place
+          and welcome people to help anytime. When I volunteered there I did various different things like feed the
+          birds, clean their cages, and sweep around the place. I also washed the food and water dishes and sometimes
+          moved things like bigger cages to places that they wanted.
+        </p>
       </p>
     </div>
+
+    <div class="parallax-5" style="color: transparent">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Consequuntur molestias ducimus et voluptate dignissimos aliquam assumenda, sint dolores animi iure modi
+      voluptatibus eius laudantium velit nobis distinctio nemo ad dolor? Lorem ipsum, dolor sit amet consectetur
+      adipisicing elit. Officiis eveniet cumque nam aspernatur incidunt nulla suscipit voluptatem magni architecto,
+      asperiores maxime ipsum. Temporibus, minus. Molestias recusandae saepe officia veritatis praesentium? Lorem ipsum
+      dolor, sit amet consectetur adipisicing elit. Quaerat officia, architecto voluptatum id ratione cum ipsam, nam
+      vero, nulla obcaecati totam tenetur eius? Corporis ad rem mollitia exercitationem perspiciatis praesentium. Lorem
+      ipsum dolor, sit amet consectetur adipisicing elit. Dicta, numquam voluptatem cumque minus asperiores tempora
+      quibusdam rem exercitationem recusandae aperiam necessitatibus veritatis hic fugiat nostrum nam, atque eligendi?
+      Necessitatibus, voluptates. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam soluta explicabo
+      aspernatur illum dolorum molestiae itaque tenetur, eum aliquam ducimus repellendus incidunt molestias ea dolorem
+      minima, omnis veritatis amet pariatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+      provident corrupti quos ea nobis accusamus ipsum aspernatur fuga nisi tenetur atque, debitis soluta eum dolor
+      eligendi id aperiam exercitationem! Delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Perspiciatis voluptate soluta non esse debitis quasi deleniti, totam dolores vitae aut, iusto numquam dolor,
+      aliquam error distinctio cupiditate quae! Quod, temporibus. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Ipsa, quasi. Sapiente quas rem corporis iusto, animi veritatis culpa velit officiis, est doloremque
+      obcaecati eum! Velit repudiandae ipsam cum praesentium unde.Lorem ipsum dolor sit amet consectetur adipisicing
+      elit.
+    </div>
+
+    <div class="home-content">
+      <h2 class="home-header">API Example</h2>
+
+      <hr>
+
+      <p class="home-description">
+        <p id="contentPoke"></p>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+
+      <!-- Footer Elements -->
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-12 py-5">
+            <div class="mb-5 flex-center">
+
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3" style="padding-bottom: 150%;">
+        <a href="https://mdbootstrap.com/education/bootstrap/" style="font-size: 150%;font-weight: bold;">Dylan J.
+          Kelley</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
   </section>
 
   <!-- Script to make header disappear while scrolling down. -->
@@ -184,8 +342,10 @@
     fetch("https://pokeapi.co/api/v2/pokemon/ditto/", {
         "method": "GET",
       })
-      .then(response => {
-        console.log(response);
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        document.querySelector('#contentPoke').innerHTML = `<div> ${data.name} </div>`;
       })
       .catch(err => {
         console.log(err);
